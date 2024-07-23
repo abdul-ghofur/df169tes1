@@ -1,0 +1,19 @@
+.section {
+  color: #000000;
+}
+.dark-mode .section {
+  color: #bbbbbb;
+}
+.labelFor {
+  color: #000000;
+}
+.dark-mode .labelFor {
+  color: #bbbbbb;
+}
+.kotakinput {
+  border: 2px solid #3E8DA8;
+}
+.dark-mode .kotakinput {
+  border:2px solid #bbbbbb;
+  background-color: #eaeaea;
+}

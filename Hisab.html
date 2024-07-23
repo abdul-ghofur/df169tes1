@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html dir='ltr' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title>FALAK 169</title>
+<style id='page-skin-1' type='text/css'>
+
+</style>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2539000132118182573&amp;zx=50207e1b-9f2e-4530-9b9b-335d6bd198f5' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2539000132118182573&amp;zx=50207e1b-9f2e-4530-9b9b-335d6bd198f5' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head>
+<body>
+<div class='section' id='main'><div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container'>
+<article class='post-outer-container'>
+<div class='post-outer'>
+<div class='post'>
+<script type='application/ld+json'>{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://falak169-info.blogspot.com/hisabawalbulan.html"
+  },
+  "headline": "No title","description": "\t                                                               PERHITUNGAN HISAB AWAL BULAN            ...","datePublished": "2024-03-30T20:40:00+07:00",
+  "dateModified": "2024-05-12T03:49:12+07:00","image": {
+    "@type": "ImageObject","url": "https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/",
+    "height": 348,
+    "width": 1200},"publisher": {
+    "@type": "Organization",
+    "name": "Blogger",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/h60/",
+      "width": 360,
+      "height": 60
+    }
+  },"author": {
+    "@type": "Person",
+    "name": "Liek Wasil"
+  }
+}</script>
+<a name='6379423114701896843'></a>
+<div class='post-body entry-content float-container' id='post-body-6379423114701896843'>
+  
+  
+<!--DOCTYPE html-->
+<html>
+   <head>
+      <base target="_top">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   </head>
+   <body>
+      <main class="container">
+         <div class="row">
+            <div class="col-md-3 kiri">
+               <h3 id="hisabawalbulan">HISAB AWAL BULAN</h3>
+               <div class="form-group">
+                  <label for="tahunHijriyah">Tahun Hijriyah:</label>
+                  <input type="number" class="form-control" id="tahunHijriyah" name="tahunahijriyah" min="1" max="2099">
+               </div>
+               <div class="form-group">
+                  <label for="Bulanijriyah">Bulan Hijriyah:</label>
+                  <select class="form-control" id="Bulanijriyah" name="Bulanijriyah">
+                     <option value="1">Muharram</option>
+                     <option value="2">Sopar</option>
+                     <option value="3">Rabi'ul Awal</option>
+                     <option value="4">Rabi'ul Akhir</option>
+                     <option value="5">Jumadal Ula</option>
+                     <option value="6">Jumadal Akhirah</option>
+                     <option value="7">Rojab</option>
+                     <option value="8">Sya'ban</option>
+                     <option value="9">Romadan</option>
+                     <option value="10">Syawwal</option>
+                     <option value="11">Dzulqa'dah</option>
+                     <option value="12">Dzulhijjah</option>
+                  </select>
+               </div>
+               <button type="button" class="btn btn-primary" onclick="hitung()">Hitung</button>
+               <p id="locationData"></p>
+               <br>
+               <div id="hasilHisab"></div>
+            </div>
+            <div class="col-md-8 kanan">
+               <h3 id="judulPeta">PETA DUNIA</h3>
+               <h5 id="tglPeta"></h5>
+               <div id="map" style="width: 600px; height: 300px;"></div>
+               <input type="text" class="form-control" id="searchInput" placeholder="Cari Lokasi...">
+               <select class="form-control" id="locationdataSelect">
+                  <!-- Option akan di-generate melalui JavaScript -->
+               </select><br><br>
+		<div id="situasighurub">
+		<h5 id="stsghurub">Situasi Ghurub</h5>
+               <select class="form-control" id="ghurubSelect">
+                <option value="1">Ghurub 1</option> 
+                <option value="2">Ghurub 2</option> 
+              </select><br>
+		<canvas id="canvas1" width="600" height="300" style="border:1px solid black;"></canvas><br>
+		<div id="keteranganSituasi"></div><br>
+
+    <canvas id="Canvas2" width="600" height="600"></canvas>
+    <!-- Slider vertikal untuk sliderX -->
+    <input type="range" min="-180" max="180" value="10" class="slider vertical-slider" id="sliderX" />
+    <br />
+    <!-- <label for="sliderY">Rotate Y:</label> -->
+    <input type="range" min="-180" max="180" value="-180" class="slider" id="sliderY" />
+    <br />
+    <!-- <label for="sliderZ">Rotate Z:</label> -->
+    <input type="range" min="-181" max="180" value="-120" class="slider" id="sliderZ" /><br>
+          <div id="pembuat"></div>
+
+		</div>
+
+            </div>
+         </div>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+   </body>
+</html>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+</div>
+</div>
+</div>
+</div>
+<section class='comments' data-num-comments='0' id='comments'>
+<a name='comments'></a>
+</section>
+</article>
+</div>
+<div class='post-feeds'>
+</div>
+</div></div>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/116388341-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY4gwfXrU4NVxDnbO3FJpSdjhaXrVA:1717206922490';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2539000132118182573','//falakiyah-info.blogspot.com/2024/03/hisabawalbulan.html?m\x3d1','2539000132118182573');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '2539000132118182573', 'title': 'FALAKIYAH INFO', 'url': 'https://falakiyah-info.blogspot.com/2024/03/hisabawalbulan.html?m\x3d1', 'canonicalUrl': 'https://falakiyah-info.blogspot.com/2024/03/hisabawalbulan.html', 'homepageUrl': 'https://falakiyah-info.blogspot.com/?m\x3d1', 'searchUrl': 'https://falakiyah-info.blogspot.com/search', 'canonicalHomepageUrl': 'https://falakiyah-info.blogspot.com/', 'blogspotFaviconUrl': 'https://falakiyah-info.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': true, 'isMobileRequest': true, 'mobileClass': ' mobile', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22FALAKIYAH INFO - Atom\x22 href\x3d\x22https://falakiyah-info.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22FALAKIYAH INFO - RSS\x22 href\x3d\x22https://falakiyah-info.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22FALAKIYAH INFO - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/2539000132118182573/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22FALAKIYAH INFO - Atom\x22 href\x3d\x22https://falakiyah-info.blogspot.com/feeds/6379423114701896843/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/def51946c7ab22b3', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '6379423114701896843', 'pageName': '', 'pageTitle': 'FALAKIYAH INFO'}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'FALAKIYAH INFO', 'description': '                                                \t                                                               HISAB AWAL BULAN            ...', 'url': 'https://falakiyah-info.blogspot.com/2024/03/hisabawalbulan.html?m\x3d1', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 6379423114701896843}}, {'name': 'widgets', 'data': [{'title': 'Blog Posts', 'type': 'Blog', 'sectionId': 'main', 'id': 'Blog1', 'posts': [{'id': '6379423114701896843', 'title': '', 'showInlineAds': false}], 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'icons', 'label': ''}]}], 'allBylineItems': [{'name': 'icons', 'label': ''}]}]}]);
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/283473234-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/13464135-lightbox_bundle.css'}, 'displayModeFull'));
+</script>
+</body>
+</html>

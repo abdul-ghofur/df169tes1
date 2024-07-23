@@ -1,0 +1,261 @@
+
+<html>
+<head>
+
+<table>
+  <td>
+
+<form name="Hijri">
+<div align="center">
+  <center>
+<table>
+    <tr valign="top">
+
+      <td> 
+      <font face="Verdana">&nbsp; </font>
+        <div align="center">
+          <center>
+        <table>
+
+					<tr>
+                          <td style="padding: 5px" colspan="3" align="center" bgcolor="#202020" width="10%" height="28" background="bgmaindark.jpg">
+                        <p style="margin-top: 15; margin-bottom: 15">
+                        <font face="Verdana" color="#FFFF00" style="font-size: 40pt">
+                        <b>Kalender Masehi</b> </font>
+						</td></tr>
+
+					<tr>
+                          <td style="padding: 5px" bgcolor="#F6F6F6" width="25%" background="bgmain.jpg" height="28" align="center">
+                        <p align="center" style="margin-top: 10; margin-bottom: 10">
+                        <font face="Verdana" style="font-size: 32pt; font-weight: 700" color="#FFFFFF">Tanggal</font></td>
+                          <td style="padding: 5px" bgcolor="#F6F6F6" width="40%" background="bgmain.jpg" height="28" align="center">
+                        <p align="center" style="margin-top: 10; margin-bottom: 10">
+                        <font face="Verdana" style="font-size: 32pt; font-weight: 700" color="#FFFFFF">Bulan</font></td>
+                          <td style="padding: 5px" bgcolor="#F6F6F6" width="35%" background="bgmain.jpg" height="28" align="center">
+                        <p align="center" style="margin-top: 10; margin-bottom: 10">
+                        <font face="Verdana" style="font-size: 32pt; font-weight: 700" color="#FFFFFF">Tahun </font>
+             			</td></tr>
+
+					<tr>
+                          <td style="padding: 5px" height="35" bgcolor="#F6F6F6" width="25%" background="bgmain.jpg">
+              			<p align="center" style="margin-top: 10; margin-bottom: 10">
+              			<font face="Verdana">
+              			<SELECT name="CDay" size="1" style="font-size: 55; text-align:center; color:#0000FF">
+                			<OPTION value=1 selected>1</OPTION>
+                			<OPTION value=2>2</OPTION>
+                			<OPTION value=3>3</OPTION>
+                			<OPTION value=4>4</OPTION>
+                			<OPTION value=5>5</OPTION>
+                			<OPTION value=6>6</OPTION>
+                			<OPTION value=7>7</OPTION>
+                			<OPTION value=8>8</OPTION>
+                			<OPTION value=9>9</OPTION>
+                			<OPTION value=10>10</OPTION>
+               				<OPTION value=11>11</OPTION>
+                			<OPTION value=12>12</OPTION>
+                			<OPTION value=13>13</OPTION>
+                			<OPTION  value=14>14</OPTION>
+                			<OPTION value=15>15</OPTION>
+                			<OPTION value=16>16</OPTION>
+                			<OPTION value=17>17</OPTION>
+                			<OPTION value=18>18</OPTION>
+                			<OPTION value=19>19</OPTION>
+                			<OPTION value=20>20</OPTION>
+                			<OPTION value=21>21</OPTION>
+                			<OPTION value=22>22</OPTION>
+                			<OPTION value=23>23</OPTION>
+                			<OPTION value=24>24</OPTION>
+                			<OPTION value=25>25</OPTION>
+                			<OPTION value=26>26</OPTION>
+                			<OPTION value=27>27</OPTION>
+                			<OPTION value=28>28</OPTION>
+                			<OPTION value=29>29</OPTION>
+                			<OPTION value=30>30</OPTION>
+                			<OPTION value=31>31</OPTION>
+						</SELECT> </font>
+							</td>
+                          <td style="padding: 5px" height="35" bgcolor="#F6F6F6" width="40%" background="bgmain.jpg">
+						<p align="center" style="margin-top: 10; margin-bottom: 10">
+						<font face="Verdana">
+						<SELECT name="CMonth" size="1" style="font-size: 55; text-align:center; color:#0000FF">
+                			<OPTION value=1 selected>Januari</OPTION>
+                			<OPTION value=2>Februari</OPTION>
+                			<OPTION value=3>Maret</OPTION>
+                			<OPTION value=4>April</OPTION>
+                			<OPTION value=5>Mei</OPTION>
+                			<OPTION value=6>Juni</OPTION>
+                			<OPTION value=7>Juli</OPTION>
+                			<OPTION value=8>Agustus</OPTION>
+                			<OPTION value=9>September</OPTION>
+                			<OPTION value=10>Oktober</OPTION>
+                			<OPTION value=11>November</OPTION>
+                			<OPTION value=12>Desember</OPTION>
+              			</SELECT> </font>
+					              			
+              			</td>
+                          <td style="padding: 5px" height="35" bgcolor="#F6F6F6" width="35%" background="bgmain.jpg">
+              			<p align="center" style="margin-top: 10; margin-bottom: 10">
+              			<font face="Verdana">
+              			<INPUT value=2007 name="CYear" size="2" style="font-size: 55; text-align:center; color:#0000FF"> </font>
+             			</td></tr>
+
+            		<tr>
+              			  <td style="padding: 5px" colspan="3" align="center" height="37" bgcolor="#F6F6F6" width="100%" background="bgmain.jpg">
+                            <p style="margin-top: 15; margin-bottom: 10">
+                            <font size="-1" face="Verdana">
+
+
+                            <INPUT type="hidden" onclick=GregToIsl(this.form) type=button value="   Start   " name="GtoH" style="border:1px solid #FF0000; font-weight: bold; color:#FFFF00; background-color:#FF0000; font-size:60"></font></p>
+                            <p style="margin-top: 25; margin-bottom: 25">
+                            <font face="Verdana">
+                            <font size="-1">
+
+
+                            <INPUT onclick=GregToIsl(this.form) type=button value="     Konversi &#8680; Hijriyah       " name="GtoH1" style="font-weight: bold; color:#FF0000; font-size:45; padding-top:20; padding-bottom:20"></font>
+                            </font>
+                          </td>
+                    </tr>
+
+            		<tr>
+              			  <td style="padding: 5px" height="9" width="66">
+                          </td>
+              			  <td style="padding: 5px" height="9" width="118"></td>
+              			  <td style="padding: 5px" height="9" width="58"></td>
+                    </tr>
+
+            		<tr>
+              			  <td colspan="3" bgcolor="#202020" align="center" bordercolor="#000000" height="30" width="100%" background="bgmaindark.jpg">
+                            <p style="margin-top: 15; margin-bottom: 15">
+                            <font face="Verdana" color="#00FF00" style="font-size: 40pt">
+                            <b>Kalender Hijriyah</b></font></td>
+                    </tr>
+
+            		<tr>
+                          <td bgcolor="#F6F6F6" height="22" width="25%" background="bgmain.jpg">
+                        <p align="center" style="margin-top: 10; margin-bottom: 10">
+                        <font face="Verdana" style="font-size: 32pt; font-weight: 700" color="#FFFFFF">Tanggal </font>
+                			</td>
+                          <td bgcolor="#F6F6F6" height="22" width="40%" background="bgmain.jpg">
+                            <p align="center" style="margin-top: 10; margin-bottom: 10">
+                            <font face="Verdana" style="font-size: 32pt; font-weight: 700" color="#FFFFFF">Bulan</font></td>
+                          <td bgcolor="#F6F6F6" height="22" width="35%" background="bgmain.jpg">
+                            <p align="center" style="margin-top: 10; margin-bottom: 10">
+                            <font face="Verdana" style="font-size: 32pt; font-weight: 700" color="#FFFFFF">Tahun </font>
+                			</td></tr>
+
+            		<tr>
+                          <td height="35" bgcolor="#F6F6F6" width="25%" background="bgmain.jpg">
+                	
+                			<p align="center" style="margin-top: 15; margin-bottom: 15">
+                	
+                			<font face="Verdana">
+                	
+                			<SELECT name="HDay" size="1" style="font-size: 55; text-align:center; color:#0000FF">
+                  				<OPTION value=1 selected>1</OPTION>
+                  				<OPTION value=2>2</OPTION>
+                  				<OPTION value=3>3</OPTION>
+                  				<OPTION value=4>4</OPTION>
+                  				<OPTION value=5>5</OPTION>
+                  				<OPTION value=6>6</OPTION>
+                  				<OPTION value=7>7</OPTION>
+                  				<OPTION value=8>8</OPTION>
+                  				<OPTION value=9>9</OPTION>
+                  				<OPTION value=10>10</OPTION>
+                  				<OPTION value=11>11</OPTION>
+                  				<OPTION value=12>12</OPTION>
+                  				<OPTION value=13>13</OPTION>
+                  				<OPTION value=14>14</OPTION>
+                  				<OPTION value=15>15</OPTION>
+                  				<OPTION value=16>16</OPTION>
+                  				<OPTION value=17>17</OPTION>
+                  				<OPTION  value=18>18</OPTION>
+                  				<OPTION value=19>19</OPTION>
+                  				<OPTION value=20>20</OPTION>
+                  				<OPTION value=21>21</OPTION>
+                  				<OPTION value=22>22</OPTION>
+                  				<OPTION value=23>23</OPTION>
+                  				<OPTION value=24>24</OPTION>
+                  				<OPTION value=25>25</OPTION>
+                  				<OPTION value=26>26</OPTION>
+                  				<OPTION value=27>27</OPTION>
+                  				<OPTION value=28>28</OPTION>
+                  				<OPTION value=29>29</OPTION>
+                  				<OPTION value=30>30</OPTION>
+                			</SELECT> </font>
+                			</td>
+                          <td height="35" bgcolor="#F6F6F6" width="40%" background="bgmain.jpg">
+                				<p align="center" style="margin-top: 15; margin-bottom: 15">
+                				<font face="Verdana">
+                				<SELECT name="HMonth" size="1" style="font-size: 55; text-align:center; color:#0000FF">
+                  				<OPTION value=1 selected>Muharram</OPTION>
+                  				<OPTION value=2>Sfafar</OPTION>
+                  				<OPTION value=3>Rabiul Awal</OPTION>
+                  				<OPTION value=4>Rabiul Akhir</OPTION>
+                  				<OPTION value=5>Jumadil Awal</OPTION>
+                  				<OPTION value=6>Jumadil Akhir</OPTION>
+                  				<OPTION value=7>Rajab</OPTION>
+                  				<OPTION value=8>Syaban</OPTION>
+                  				<OPTION value=9>Ramadhan</OPTION>
+                  				<OPTION value=10>Syawwal</OPTION>
+                  				<OPTION value=11>Zulqaidah</OPTION>
+                  				<OPTION value=12>Zulhijjah</OPTION>
+                			</SELECT> </font>
+                			</td>
+                          <td height="35" bgcolor="#F6F6F6" width="35%" background="bgmain.jpg">
+                			<p align="center" style="margin-top: 15; margin-bottom: 15">
+                			<font face="Verdana">
+                			<INPUT name="HYear" size="2" value="1" style="font-size: 55; text-align:center; color:#0000FF"> </font>
+                			</td></tr>
+
+            		<tr>
+              			  <td colspan="3" align="right" height="37" bgcolor="#F6F6F6" width="100%" background="bgmain.jpg">
+                            <p align="center" style="margin-top: 25; margin-bottom: 25">
+                            <font face="Verdana">
+                            <INPUT onclick=IslToGreg(this.form) type=button value="     Konversi &#8680; Masehi     " name="HtoG" style="font-weight: bold; color:#FF0000; font-size:45; padding-top:20; padding-bottom:20">
+                            </font>
+                          </td>
+                    </tr>
+          		</table></center>
+      </div>
+      <font size="-1">
+
+
+            <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+            </font>
+            <p style="margin-top: 25; margin-bottom: 25" align="center" dir="ltr">
+            <font color="#008000" face="Verdana" size="6"><b>Hari Pasaran :<span lang="en-us">&nbsp;&nbsp;
+            </span></b></font><font size="-1"><font color="#FF0000" face="Verdana">&nbsp;<INPUT name="wd" size="3" style="border:0px solid #FFFFFF; font-size: 45; text-align:center; font-weight:bold; padding-left:4; padding-right:4; padding-top:1; padding-bottom:1; background-image:url('bgbright.jpg')" > 
+            <INPUT name="pd" size="3" style="border:0px solid #FFFFFF; font-size: 45; text-align:center; font-style:italic; font-weight:bold; padding-left:4; padding-right:4; padding-top:1; padding-bottom:1; background-image:url('bgbright.jpg')" ></font>
+            <font face="Verdana"><span lang="en-us">&nbsp;</span><INPUT  type="hidden" name="JD" size="0" >
+            </font>
+            <font face="Verdana" color="#008000">
+<!--
+<INPUT style="visibility: hidden" name="JD" size="20" >
+-->
+</font>
+            <font size="1" face="Verdana" color="#008000">&nbsp; </font>
+            </font></td></tr>
+		</table>
+                </center>
+</div>
+            
+
+
+          
+
+
+
+
+      
+
+
+
+      <script src="js/h-konversi.js"></script>
+      
+ <div>
+ <span id=tmpAlert>00:00:00
+<input type=hidden value=00:00:00 name=ClockView></span>
+<script language=JavaScript>myClock();</script></div>
+
+</table>
+</html>
